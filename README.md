@@ -1,11 +1,10 @@
 <h1>LinkTree</h1>
 
+<br>
 <p>This project was made with the intention of grouping all the links in one place and with a personalized URL.</p>
 
 <p>I was able to put into practice all my knowledge about responsiveness and I am happy with the result.</p>
 
-<hr>
-<br>
 <h2>Linktree</h2>
 <img src="./assets/preview-img.png" alt="preview image">
 
