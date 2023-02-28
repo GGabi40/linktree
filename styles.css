@@ -11,7 +11,6 @@ font-family: 'Inria Serif';
 }
 
 
-
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +23,7 @@ html {
 }
 
 body {
-    background: var(--first-color);
+    background: url(./assets/background.svg);
 }
 
 .container {
@@ -89,6 +88,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    
 }
 
 #button-proj {
