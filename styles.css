@@ -156,7 +156,7 @@ p {
 }
 
 .img-icons img {
-    height: 30px;
+    height: 45px;
     margin-right: 4px;
 }
 
@@ -251,6 +251,23 @@ a {
     text-decoration: none;
 }
 
+@media (min-width: 260px) {
+    .container {
+        margin: 0 5%;
+    }
+
+    #button-proj, #button-ig, #button-yt {
+        width: 50%;
+    }
+
+    #button-donation {
+        width: 80%;
+    }
+
+    .img-icons img {
+        height: 25px;
+    }
+}
 
 /* Tablets */
 @media (min-width: 500px) {
@@ -262,6 +279,10 @@ a {
     #photo {
         height: 180px;
         width: 180px;
+    }
+
+    .img-icons img {
+        height: 30px;
     }
 
     .container {
@@ -281,8 +302,12 @@ a {
 /* HD */
 @media (min-width: 920px) {
     .container {
-        margin: 0 30%;
-        max-width: 930px;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .img-icons img {
+        height: 32px;
     }
 
     #circle {
