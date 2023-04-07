@@ -7,9 +7,9 @@ font-family: 'Inria Serif';
     --first-color: #1d161e;
     --second-color: #2b1d5a;
     --terciary-color: #4c1c46;
+    --terciary2-color: #2c1128;
     --cuat-color: rgb(255, 241, 115);
 }
-
 
 * {
     margin: 0;
@@ -24,6 +24,11 @@ html {
 
 body {
     background: url(./assets/background.svg);
+}
+
+p {
+    font-size: 1.4rem;
+    font-family: 'Inria Serif';
 }
 
 .container {
@@ -49,8 +54,7 @@ body {
 }
 
 #photo {
-    background: url(./assets/foto-eu.jpg);
-    background-position: center;
+    background: url(./assets/imgs/Foto-actualizada-cortada.jpg) center;
     background-size: cover;
 
     position: relative;
@@ -68,17 +72,26 @@ body {
     font-size: 1.8em;
     text-align: center;
 
+    margin-top: 30px;
     transition: 0.3s;
 }
 
+.container p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+}
 
-.container-buttons{
-    background: var(--terciary-color);
+
+.container-buttons {
+    background: linear-gradient(-180deg,
+    var(--terciary-color),
+    var(--terciary2-color));
 
     position: relative;
-    margin-top: 10px;
+    margin-top: 15px;
     bottom: 0;
-    height: 81%;
+    height: 100%;
 
     text-align: center;
     border-radius: 100px 100px 33px 33px;
@@ -91,7 +104,7 @@ body {
     
 }
 
-#button-proj {
+.first-btn {
     margin-top: 25px;
 }
 
@@ -99,14 +112,66 @@ body {
     margin-bottom: 25px;
 }
 
-#button-proj, #button-ig, #button-yt, #button-donation {
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons:hover {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons:hover .img-icons {
+    display: block;
+
+    animation: 0.4s textUp ease-out;
+}
+
+@keyframes textUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.img-icons {
+    display: none;
+}
+
+.img-icons img {
+    height: 30px;
+    margin-right: 4px;
+}
+
+.logo.linkedin {
+    margin-right: 10px;
+}
+
+#button-proj, #button-ig, #button-yt {
     background-color: var(--cuat-color);
     box-shadow: inset 0px -10px 4px rgba(0, 0, 0, 0.25);
     border-radius: 13px;
     border: none;
 
-    height: 60px;
-    width: 50%;
+    height: 50px;
+    width: 35%;
     
     display: flex;
     justify-content: center;
@@ -120,11 +185,40 @@ body {
     transition: 0.4s;
 }
 
-#button-proj:hover, #button-ig:hover, #button-yt:hover, #button-donation:hover {
+#button-proj:hover, #button-ig:hover, #button-yt:hover {
     cursor: pointer;
 
     background-color: rgb(250, 217, 68);
     transform: scale(1.1);
+}
+
+#button-donation {
+    background-color: var(--first-color);
+    box-shadow: inset 0px -10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    border: none;
+
+    height: 40px;
+
+    font-family: 'Inria Serif';
+    font-weight: 700;
+    font-size: 1.3em;
+    color: var(--cuat-color);
+
+    transition: 0.4s;
+}
+
+#button-donation:hover {
+    cursor: pointer;
+
+    color: var(--first-color);
+    background-color: rgb(250, 217, 68);
+    transform: scale(1.1);
+}
+
+.container-donation h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
 }
 
 #div-button-donation {
