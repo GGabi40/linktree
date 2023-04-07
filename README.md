@@ -6,7 +6,7 @@
 <p>I was able to put into practice all my knowledge about responsiveness and I am happy with the result.</p>
 
 <h2>Linktree</h2>
-<img src="./assets/preview-img.png" alt="preview image">
+<img src="./assets/imgs/preview-img.png" alt="preview image">
 
 <hr>
 <br>
